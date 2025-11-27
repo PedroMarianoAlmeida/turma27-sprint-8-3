@@ -1,0 +1,48 @@
+@media screen and (min-width: 1280px){
+* {
+    margin: 0;
+    padding-left: auto;
+    padding-right: auto;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: white;
+}
+}
+
+@media screen and (max-width : 1280px) and (min-width : 768px){
+    
+    * {
+        margin: 0;
+        padding-left: auto;
+        padding-right: auto;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #000;
+        color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width : 768px){
+    * {
+        margin: 0;
+        padding-left: auto;
+        padding-right: auto;
+        box-sizing: border-box;
+        font-family: 'Inter', Arial, sans-serif;
+    }
+
+    body {
+        background-color: #000;
+        color: white;
+        margin: 0 1.5rem;
+    }
+}

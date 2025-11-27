@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Veroneze x TripleTen">
+    <title>Project Around</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body>
+<header class="header">
+    <img src="./assets/Vector.png" class="logo">
+</header>
+
+<!-- Perfil -->
+<section class="profile-section">
+    <div class="profile-info">
+        <img src="./assets/image.jpg" alt="Foto de perfil" class="profile-pic">
+        <div>
+            <h2 class="profile-name">Jacques Cousteau 
+                <img src="./assets/Edit-Button.png" alt="Editar perfil" class="edit-icon" id="editIcon">
+            </h2>
+            <p class="profile-occupation">Explorador</p>
+        </div>
+    </div>
+    <button class="edit-profile-button" id="editProfileBtn">+</button>
+</section>
+
+<section class="elements"> 
+    <div class="elements__list"></div>
+</section>
+
+<div class="modal-overlay" id="profileModal">
+    <div class="modal">
+        <div class="modal-header">
+            <div class="modal-title">Editar perfil</div>
+            <button class="modal-close" id="closeModal"></button>
+        </div>
+        <form class="modal-form" id="profileForm">
+            <div class="form-group">
+                <label class="form-label"></label>
+                <input type="text" class="form-input" id="nameInput" value="Jacques Cousteau" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label"></label>
+                <input type="text" class="form-input" id="occupationInput" value="Explorador" required>
+            </div>
+            
+            <button type="submit" class="save-button" id="saveProfileBtn">Salvar</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal-overlay" id="addCardModal">
+    <div class="modal">
+        <div class="modal-header">
+            <div class="modal-title">Novo local</div>
+            <button class="modal-close" id="closeAddCardModal"></button>
+        </div>
+        <form class="modal-form" id="addCardForm">
+            <div class="form-group">
+                <input type="text" class="form-input" id="cardTitleInput" placeholder="Título" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="url" class="form-input" id="cardImageInput" placeholder="Link da imagem" required>
+            </div>
+            
+            <button type="submit" class="save-button">Criar</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal-overlay" id="imageModal">
+    <div class="modal-image-container">
+        <button class="modal-close" id="closeImageModal"></button>
+        <img src="" alt="" class="modal-image">
+        <p class="modal-image-caption"></p>
+    </div>
+</div>
+
+<footer class="footer">
+    © 2024 Around The U.S.
+</footer>
+
+<template id="card-template">
+    <div class="element">
+        <button class="element__delete-button" type="button"></button>
+        <img src="" alt="" class="element__image">
+        <div class="element__info">
+            <h2 class="element__title"></h2>
+            <button class="element__like-button" type="button"></button>
+        </div>
+    </div>
+</template>
+
+<script defer src="./scripts/index.js"></script>
+</body>
+</html>

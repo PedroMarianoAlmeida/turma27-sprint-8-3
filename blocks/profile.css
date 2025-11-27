@@ -1,0 +1,241 @@
+@media screen and (min-width: 1280px) {
+
+.profile-section {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 30px 0 10px; /* Removido o padding inferior */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    margin: 0 0 10px;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.14;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.verified-icon {
+    width: 20px;
+    height: 20px;
+    fill: #2F80ED;
+    cursor: pointer;
+}
+
+.profile-occupation {
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+.edit-profile-button {
+    width: 150px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.edit-profile-button:hover {
+    opacity: 0.6;
+}
+
+.edit-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.edit-icon:hover {
+    opacity: 0.6;
+}
+}
+
+
+@media screen and (max-width : 1280px) and (min-width : 768px){
+
+.profile-section {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 20px 0 10px; /* Removido o padding inferior */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    margin: 0 0 10px;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.14;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.verified-icon {
+    width: 20px;
+    height: 20px;
+    fill: #2F80ED;
+    cursor: pointer;
+}
+
+.profile-occupation {
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+.edit-profile-button {
+    width: 150px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.edit-profile-button:hover {
+    opacity: 0.6;
+}
+
+.edit-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.edit-icon:hover {
+    opacity: 0.6;
+}
+}
+
+@media screen and (max-width : 768px){
+
+.profile-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 320px; /* Largura máxima consistente para mobile */
+    margin: 0 auto;
+    padding: 20px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info {
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 32px;
+    justify-content: center;
+    margin: 0 0 10px;
+    font-weight: 500;
+    line-height: 1.14;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.verified-icon {
+    width: 20px;
+    height: 20px;
+    fill: #2F80ED;
+}
+
+.profile-occupation {
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+.edit-profile-button {
+    width: 100%;
+    max-width: 282px; /* Alinhado com a largura do card */
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.edit-profile-button:hover {
+    opacity: 0.6;
+}
+
+.edit-icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.edit-icon:hover {
+    opacity: 0.6;
+}
+}
+
+/* Responsividade */
+@media screen and (max-width: 900px) {
+    .profile-section {
+        padding-left: 19px;
+        padding-right: 19px;
+        box-sizing: border-box; /* Garante que o padding não aumenta a largura total */
+    }
+}
